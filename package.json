@@ -3,7 +3,6 @@
 	"version": "1.0.0",
 	"description": "A universal interface for designing \"transports\", i.e. ways of sending https+wss traffic from the browser through a proxy.",
 	"type": "module",
-	"packageManager": "pnpm@10.12.1",
 	"scripts": {
 		"build": "rollup -c",
 		"watch": "rollup -cw",
