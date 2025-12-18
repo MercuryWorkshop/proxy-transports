@@ -66,8 +66,8 @@ jobs:
       - name: Upload Artifact (pnpm pack)
         uses: actions/upload-artifact@v4
         with:
-          name: proxy-transports
-          path: proxy-transports-*.tgz
+          name: packaged-proxy-transports
+          path: mercuryworkshop-proxy-transports-*.tgz
 
   publish:
     name: Publish to NPM
@@ -86,11 +86,11 @@ jobs:
       - name: Get artifacts
         uses: actions/download-artifact@v4
         with:
-          name: proxy-transports
+          name: packaged-proxy-transports
           path: .
 
       - name: Update npm
         run: npm install -g npm@latest
 
       - name: Publish
-        run: npm publish proxy-transports-${{ needs.version-check.outputs.new_version }}.tgz --access public --no-git-checks
+        run: npm publish mercuryworkshop-proxy-transports-${{ needs.version-check.outputs.new_version }}.tgz --access public --no-git-checks
