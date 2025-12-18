@@ -16,6 +16,7 @@
 			"require": "./dist/index.js"
 		}
 	},
+	"files": ["dist", "README"],
 	"devDependencies": {
 		"rollup": "^4.24.0",
 		"rollup-plugin-typescript2": "^0.36.0"
