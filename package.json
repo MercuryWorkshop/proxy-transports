@@ -1,6 +1,6 @@
 {
 	"name": "@mercuryworkshop/proxy-transports",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A universal interface for designing \"transports\", i.e. ways of sending https+wss traffic from the browser through a proxy.",
 	"type": "module",
 	"repository": {
