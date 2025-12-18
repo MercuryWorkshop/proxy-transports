@@ -69,14 +69,6 @@ jobs:
           name: proxy-transports
           path: proxy-transports-*.tgz
 
-      - name: Upload Artifact (dist)
-        uses: actions/upload-artifact@v4
-        with:
-          name: proxy-transports
-          path: |
-            dist/*.d.ts
-            dist/*.js
-            dist/*.js.map
   publish:
     name: Publish to NPM
     runs-on: ubuntu-latest
